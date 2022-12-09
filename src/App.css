@@ -1,38 +1,549 @@
-.App {
+/* @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+
+body {
+
+  /* RECORD STYLING
+  background-color: #FFF9ED;
+  color: white; */
+
+  background-color: black;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+/* MAIN COLORS 
+BACKGROUND BODY rgb(255, 238, 207) 
+
+OFF BLACK HEADER BACKGROUND rgb(24, 24, 24); 
+
+RED dd1c1a
+
+
+LOGO COLORS 
+background: FFF9ED
+
+pink: F26D7D
+faded black: 252525
+yellow: FBC78A
+orange: EB5A28
+
+/* #ffcb69; */
+
+
+
+
+
+
+
+
+
+
+/* //// NAV BAR / HEADER SECTION //////////////////////////////////// */
+
+#navbar {
+
+  /* RECORD STYLING */
+  /* background-color: #F26D7D; */
+  /* display: flex;
+  justify-content: center;
+  padding: 0.5em;
+  font-size: 2em;
+  color: #FBC78A; */
+  /* border-top: 2px solid #FFF9ED;
+  border-bottom: 2px solid #FFF9ED; */
+  /* width: 100%; */
+
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+  font-size: 2em;
+  color: white;
+}
+
+#inner-navbar {
+  padding-bottom: 1em;
+  border-bottom: 2px solid #b58afb;
+}
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+  top: 0;
+}
+
+#navdiv {
+  /* margin-top: 2em; */
   text-align: center;
+  z-index: 9;
+  background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
+#nav-logo-div {
+  /* RECORD STYLING */
+  /* background-color: #FFF9ED;
+  color: wheat;
+  text-align: center; */
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+}
+
+#header-vid {
+  height: 25em;
+}
+
+/* #vintage-logo {
+  width: 30vw;
+  height: 30vh;
+} */
+
+#nav-logo {
+  font-size: 15em;
+}
+
+.alink {
+  padding: 0.5em;
+  font-size: 0.75em;
+}
+
+.alink:hover {
+  /* text-decoration: underline; */
+
+  /* RECORD STYLING
+  color: #dd1c1a; */
+
+  color:#8a43fc;
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+#social-links {
+  margin-top: 1em;
+}
+
+.social-icons {
+  font-size: 1.75em;
+  margin: 0.5em;
+
+  /* RECORD STYLING
+  color: #FBC78A; */
+
+  color:white;
+}
+
+.social-icons:hover {
+
+  /* RECORD STYLING
+  color: #dd1c1a; */
+
+  color: #8a43fc;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+#vid-section {
+  margin-top: 4em;
+  display: flex;
+  justify-content: center;
+}
+
+.video-responsive {
+  position: relative;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ///// LIVE SECTION /////////////////////////////////// */
+
+#live-section {
+
+  /* RECORD STYLING
+  background-color: #dd1c1a; */
+
+  background-color: #b58afb;
+  margin-top: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#live-content-container {
+  padding: 2em;
+  width: 90%;
+
+  /* RECORD STYLING
+  border-top: 2px solid #dd1c1a; */
+
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.live-header {
+  font-size: 5em;
+  color: #252525;
+}
+
+.purple-live-header {
+  font-size: 5em;
+  color: #FFF9ED;
+}
+
+.live-show {
+  margin:auto;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25em 1em 0.25em 1em;
+  text-transform: uppercase;
+}
+
+.live-show:hover {
+
+  /* RECORD STYLING
+  background-color: rgb(221, 28, 26); */
+
+  background-color: white;
+  transition: 0.25s;
+}
+
+.past-live-show {
+  margin:auto;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25em 1em 0.25em 1em;
+  text-transform: uppercase;
+  background-color: gray;
+  color:#252525
+}
+
+.ticket-button {
+
+  /* RECORD STYLING
+  background-color: wheat; */
+
+  background-color: #b58afb;
+  border: 2px solid white;
+  color: white;
+  padding: 1em;
+  height: 100%;
+}
+
+.ticket-button:hover {
+
+  /* RECORD STYLING
+  background-color: rgba(157, 6, 13, 0.545); */
+
+  background-color: #8a43fc;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.pastshow-ticket-button {
   pointer-events: none;
+  background-color: gray;
+  border: 2px solid white;
+  color: white;
+  padding: 1em;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ticket-link {
+  color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ticket-link:hover {
+  color: rgba(119, 56, 255, 0.545);
+  transition: 0.25s;
+}
+
+.sold-out {
+  text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+
+
+/* ///////// BLOG SECTION //////////////////////////////////// */
+
+#blog-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-icon-div {
+  text-align: center;
+  padding: 0.5em;
+}
+
+.blog-social-icons {
+  font-size: 2em;
+  margin: 1em;
+  /* RECORD STYLING
+  color: #FBC78A; */
+  color: #8a43fc;
+}
+
+.blog-social-icons:hover {
+  color: white;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+#right-blog {
+  color: white;
+  padding: 4em;
+}
+
+#left-blog {
+  color: white;
+  padding: 4em;
+}
+
+#middle-blog {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.blog-letters {
+  animation-name: changeBlogLettersColor;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transition-duration: 2s;
+  text-align: center;
+  font-size: 10em;
+  font-weight: 900;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes changeBlogLettersColor {
+  0% {
+    color: #9600CC;
   }
-  to {
-    transform: rotate(360deg);
+  25% {
+    color: #FF35FE;
+  }
+  50% {
+    color: #479AFF;
+  }
+  75% {
+    color: #F7F7FF;
+  }
+  100% {
+    color: #735fda;
+  }
+}
+
+.song-blog {
+  border: 2px solid white;
+  color: white;
+  padding: 1em;
+  margin: 1em;
+  width: 90%;
+  text-align: center;
+  display: block;
+}
+
+.blog-title {
+  font-weight: 900;
+  font-size: 3em;
+  background-color: white;
+  color: black;
+  margin: 0;
+}
+
+.lyrics-img-section {
+  height: 30em;
+  display: flex;
+}
+
+.true-lyrics-img {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content:end;
+  width: 60%;
+  background-color: white;
+}
+
+.meaning-section {
+  color: black;
+  width: 40%;
+  padding: 2em;
+  border-right: 2px solid black;
+  background-color: white;
+}
+
+.song-img {
+  border: 1px solid black;
+  align-self: flex-end;
+  justify-self: flex-end;
+  width: 50%;
+  height: 50%;
+}
+
+
+
+
+
+/* ///////////////// CONTACT SECTION ////////////////////////// */
+
+
+#contact-section {
+  background-color: white;
+  margin-top: 3em;
+  display: flex;
+}
+
+#contact-section-left {
+  text-align: center;
+  width: 50vw;
+  padding: 2em;
+}
+
+#inner-left {
+  border-right: 2px solid #b58afb;
+  text-align: center;
+  /* width: 50vw; */
+  /* RECORD STYLING
+  border-right: 2px solid #dd1c1a; */
+}
+
+#contact-section-right {
+  width: 50vw;
+  text-align: center;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contact-logo {
+  color: #252525;
+  font-size: 5em;
+  font-weight: 900;
+}
+
+.contact-content {
+  color: #252525;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+#contact-email {
+  color: #252525;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+#email-input {
+  text-align: center;
+  width: 20em;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+#email-input:focus {
+  outline: none;
+}
+
+.btn {
+  color: white;
+  border: 2px solid white;
+  background-color: #b58afb;
+  margin: 2em;
+  padding: 1em;
+}
+
+.btn:hover {
+  background-color: #8a43fc;
+  cursor: pointer;
+}
+
+
+
+/* ////////// MEDIA QUERIES ///////////////////////////// */
+
+@media screen and (max-width: 1110px){
+  #right-blog {
+    display: none;
+  }
+
+  #left-blog {
+    display: none;
+  }
+
+  .purple-live-header {
+    display: none;
+  }
+
+  .live-header {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px){
+  #contact-email {
+    font-size: 1.1em;
+  }
+
+  #contact-logo {
+    font-size: 2.5em;
+  }
+
+  .contact-content {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .video-responsive {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #contact-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #inner-left {
+    border-bottom: 2px solid #b58afb;
+    border-right: none;
+    /* padding-bottom: 1.5em; */
+  }
+
+  #contact-section-right {
+    padding: 0;
   }
 }
