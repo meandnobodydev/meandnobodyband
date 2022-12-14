@@ -1,6 +1,6 @@
 import React from "react";
-import theCab from "./cab.png";
-import soho from "./soho.png"
+import cab from "./cab.png";
+import soho from "./soho.png";
 import red from "./redcoverart.png"
 import { BsSpotify } from "react-icons/bs";
 import { SiApplemusic } from "react-icons/si";
@@ -31,7 +31,7 @@ function Blog() {
                 </div>
                 <div className="lyrics-img-section">
                     <div className="meaning-section">
-                    <img src={theCab} className="song-img"></img>
+                    <img src={cab} className="song-img"></img>
                     <p>I missed you, you must have got in the cab.
                         <br></br> 
                     And I want you, but not that bad.
