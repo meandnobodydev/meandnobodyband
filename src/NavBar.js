@@ -12,7 +12,7 @@ function NavBar() {
                 to="live-section"
                 spy={true}
                 smooth={true}
-                offset={-155}
+                offset={-285}
                 duration={500}>LIVE</Link>
                 <Link className="alink" activeClass="active"
                 to="blog-section"

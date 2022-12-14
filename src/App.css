@@ -1,5 +1,9 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
 
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 body {
 
@@ -11,6 +15,8 @@ body {
   /* display: flex;
   align-items: center;
   justify-content: center; */
+  /* width: 100%;
+  overflow-x: hidden; */
 }
 
 /* MAIN COLORS 
@@ -185,6 +191,9 @@ orange: EB5A28
 #live-content-container {
   padding: 2em;
   width: 90%;
+  text-align: center;
+  font-weight: 900;
+  color: #252525;
 
   /* RECORD STYLING
   border-top: 2px solid #dd1c1a; */
@@ -387,25 +396,27 @@ orange: EB5A28
 .true-lyrics-img {
   color: black;
   display: flex;
-  flex-direction: column;
-  justify-content:end;
+  justify-content: center;
+  align-items: center;
   width: 60%;
+  padding: 1em;
   background-color: white;
 }
 
 .meaning-section {
   color: black;
   width: 40%;
-  padding: 2em;
+  padding: 1em;
   border-right: 2px solid black;
   background-color: white;
+  overflow:scroll;
 }
 
 .song-img {
   border: 1px solid black;
   align-self: flex-end;
   justify-self: flex-end;
-  width: 50%;
+  width: 80%;
   height: 50%;
 }
 
@@ -507,6 +518,7 @@ orange: EB5A28
 
   .live-header {
     text-align: center;
+    font-size: 2.5em;
   }
 }
 
@@ -548,3 +560,25 @@ orange: EB5A28
     padding: 0;
   }
 }
+
+@media screen and (max-width: 650px) {
+  .true-lyrics-img {
+    font-size: smaller;
+    overflow: scroll;
+  }
+
+  .lyrics-img-section {
+    font-size: smaller;
+  }
+
+  #contact-email {
+    font-size: smaller;
+  }
+}
+
+/* @media screen and (max-width: 710px) {
+  html {
+    width: 100%;
+    overflow-x: hidden;
+  }
+} */

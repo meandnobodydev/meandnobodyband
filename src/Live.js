@@ -5,7 +5,7 @@ function Live() {
         <div id="live-section">
             <h1 className="purple-live-header">ME + NOBODY LIVE</h1>
             <div id="live-content-container">
-                <div className="past-live-show">
+                {/* <div className="past-live-show">
                     <h2 className="live-date">08. 19. 2022.</h2>
                     <h2 className="live-venue">amityville music hall</h2>
                     <button className="pastshow-ticket-button" disabled={true}>SOLD OUT</button>
@@ -28,8 +28,9 @@ function Live() {
                 <div className="live-show">
                     <h2 className="live-date">11. 18. 2023.</h2>
                     <h2 className="live-venue">madison square garden</h2>
-                    <button className="ticket-button">Tickets</button>
-                </div>
+                    <button className="ticket-button">Tickets</button> */}
+                    <h1>NEW SHOW DATES TBA</h1>
+            </div>
                 <h1 className="live-header">ME + NOBODY LIVE</h1>
                 {/* <h2 className="sold-out">08. 19. 2022. @ amityville music hall - SOLD OUT</h2>
                 <h2 className="sold-out">11. 05. 2022. @ amityville music hall - </h2>
@@ -38,7 +39,7 @@ function Live() {
                 <h2>11. 18. 2023 @ Madison Square Garden</h2>
                 <h2>11. 19. 2023 @ Madison Square Garden</h2> */}
             </div>
-        </div>
+        // </div>
     )
 }
 
