@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/meandnobodyband/static/css/main.f99adf04.css",
-    "main.js": "/meandnobodyband/static/js/main.0e402827.js",
+    "main.css": "/meandnobodyband/static/css/main.1e422e33.css",
+    "main.js": "/meandnobodyband/static/js/main.b6c17228.js",
     "static/js/787.4cbd1cf3.chunk.js": "/meandnobodyband/static/js/787.4cbd1cf3.chunk.js",
     "static/media/websiteteaservid.mp4": "/meandnobodyband/static/media/websiteteaservid.4cccdea65b64987c9840.mp4",
     "static/media/soho.png": "/meandnobodyband/static/media/soho.d754f242f402c0e115e4.png",
     "static/media/cab.png": "/meandnobodyband/static/media/cab.1a1a9bf2d2416b82c6ad.png",
+    "static/media/redcoverart.png": "/meandnobodyband/static/media/redcoverart.7955f7bad47e2e59b807.png",
     "index.html": "/meandnobodyband/index.html",
-    "main.f99adf04.css.map": "/meandnobodyband/static/css/main.f99adf04.css.map",
-    "main.0e402827.js.map": "/meandnobodyband/static/js/main.0e402827.js.map",
+    "main.1e422e33.css.map": "/meandnobodyband/static/css/main.1e422e33.css.map",
+    "main.b6c17228.js.map": "/meandnobodyband/static/js/main.b6c17228.js.map",
     "787.4cbd1cf3.chunk.js.map": "/meandnobodyband/static/js/787.4cbd1cf3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f99adf04.css",
-    "static/js/main.0e402827.js"
+    "static/css/main.1e422e33.css",
+    "static/js/main.b6c17228.js"
   ]
 }
