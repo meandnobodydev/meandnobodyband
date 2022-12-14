@@ -1,9 +1,18 @@
-import React, {useRef} from "react";
+import React, {useRef, useState} from "react";
 import emailjs from '@emailjs/browser';
 
 function Contact() {
 
+    const [modalOpen, setModalOpen] = useState();
     const form = useRef();
+
+    function openModal() {
+        setModalOpen(true);
+    }
+
+    function closeModal() {
+        setModalOpen(false);
+    }
     
     const sendEmail = (e) => {
         e.preventDefault();
@@ -11,6 +20,7 @@ function Contact() {
         emailjs.sendForm('service_7mzzfdd', 'template_mqi9vrf', form.current, 'RFXJgjiNicTEPS3qQ')
           .then((result) => {
               console.log(result.text);
+              openModal();
           }, (error) => {
               console.log(error.text);
           });
@@ -31,6 +41,16 @@ function Contact() {
                 <form id="contact-form" ref={form} onSubmit={sendEmail}>
                     <input type="email" placeholder="YOUR EMAIL" id="email-input" name="user_email" required></input>
                     <br></br>
+                    {modalOpen ? 
+                    <div className="contact-message">
+                        <span id="modal-x" onClick={() => {
+                            closeModal();
+                        }}>X</span>
+                        <h2>Thanks for signing up!</h2>
+                    </div>
+                    :
+                    null
+                    }
                     <button className="btn">SUBMIT</button>
                 </form>
             </div>

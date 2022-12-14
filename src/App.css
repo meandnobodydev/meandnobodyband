@@ -1,16 +1,12 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
 
-html {
-  width: 100%;
-  overflow-x: hidden;
-}
+html, body {overflow-x: hidden !important;width: 100vw !important;}
 
 body {
 
   /* RECORD STYLING
   background-color: #FFF9ED;
   color: white; */
-
   background-color: black;
   /* display: flex;
   align-items: center;
@@ -473,13 +469,14 @@ orange: EB5A28
   color: #252525;
   font-size: 1.5em;
   font-weight: 900;
+  margin-bottom: 2em;
 }
+
 
 #email-input {
   text-align: center;
   width: 20em;
   padding: 1em;
-  text-transform: uppercase;
 }
 
 #email-input:focus {
@@ -499,6 +496,25 @@ orange: EB5A28
   cursor: pointer;
 }
 
+.contact-message {
+  border-radius: 10px;
+  margin-top: 1em;
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.75em;
+  background-color: #8a43fc;
+  padding: 1em;
+}
+
+#modal-x {
+  font-size: 1.75em;
+}
+
+#modal-x:hover {
+  color: #252525;
+  cursor: pointer;
+  transition: 0.25s;
+}
 
 
 /* ////////// MEDIA QUERIES ///////////////////////////// */
@@ -572,7 +588,17 @@ orange: EB5A28
   }
 
   #contact-email {
-    font-size: smaller;
+    font-size: 0.65em;
+  }
+
+  .song-img {
+    height: 40%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .song-img {
+    width: 100%;
   }
 }
 
