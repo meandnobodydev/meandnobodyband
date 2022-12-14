@@ -116,7 +116,9 @@ function Blog() {
                     <p>
                         You say you want me, is that for you?
                         <br></br>
+                        <p>
                         You say you want me, I do.
+                        </p>
                     </p>
                     </div>
                     <div className="true-lyrics-img">

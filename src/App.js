@@ -22,7 +22,7 @@ function App() {
     <>
     <div id="nav-logo-div">
       {/* <img id="vintage-logo" src={logo}></img> */}
-      <video id="header-vid" src={video} autoPlay loop muted playsinline></video>
+      <video id="header-vid" src={video} type="video/mp4" loop={true} muted={true} autoPlay={true} playsInline={true}></video>
       {/* <video id="header-vid" src={video} autoPlay loop muted></video>
       <video id="header-vid" src={video} autoPlay loop muted></video>
       <video id="header-vid" src={video} autoPlay loop muted></video> */}
