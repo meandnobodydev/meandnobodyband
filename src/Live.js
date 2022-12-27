@@ -29,7 +29,7 @@ function Live() {
                     <h2 className="live-date">11. 18. 2023.</h2>
                     <h2 className="live-venue">madison square garden</h2>
                     <button className="ticket-button">Tickets</button> */}
-                    <h1>NEW SHOW DATES TBA</h1>
+                    <h1 id="live-text">NEW SHOW DATES TBA</h1>
             </div>
                 <h1 className="live-header">ME + NOBODY LIVE</h1>
                 {/* <h2 className="sold-out">08. 19. 2022. @ amityville music hall - SOLD OUT</h2>

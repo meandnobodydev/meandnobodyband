@@ -158,7 +158,6 @@ orange: EB5A28
 
 .video-responsive {
   position: relative;
-
 }
 
 
@@ -196,6 +195,10 @@ orange: EB5A28
 
   border-top: 2px solid white;
   border-bottom: 2px solid white;
+}
+
+#live-text {
+  color: white;
 }
 
 .live-header {
@@ -600,6 +603,8 @@ orange: EB5A28
   .song-img {
     width: 100%;
   }
+
+
 }
 
 /* @media screen and (max-width: 710px) {
