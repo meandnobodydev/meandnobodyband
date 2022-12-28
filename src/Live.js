@@ -29,7 +29,12 @@ function Live() {
                     <h2 className="live-date">11. 18. 2023.</h2>
                     <h2 className="live-venue">madison square garden</h2>
                     <button className="ticket-button">Tickets</button> */}
-                    <h1 id="live-text">NEW SHOW DATES TBA</h1>
+                    {/* <h1 id="live-text">NEW SHOW DATES TBA</h1> */}
+                    <div className="live-show">
+                    <h2 className="live-date">01. 15. 2023.</h2>
+                    <h2 className="live-venue">MERCURY LOUNGE, NYC</h2>
+                    <button className="ticket-button"><a className="ticket-link" href="https://www.ticketmaster.com/calista-garcia-blanket-approval-new-york-new-york-01-15-2023/event/00005D93C39632FF?artistid=2905749&tm_link=tm_header_search" target="_blank">Tickets</a></button>
+                </div>
             </div>
                 <h1 className="live-header">ME + NOBODY LIVE</h1>
                 {/* <h2 className="sold-out">08. 19. 2022. @ amityville music hall - SOLD OUT</h2>

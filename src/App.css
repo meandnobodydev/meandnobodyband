@@ -112,6 +112,8 @@ orange: EB5A28
 .alink {
   padding: 0.5em;
   font-size: 0.75em;
+  text-decoration: none;
+  color: white;
 }
 
 .alink:hover {
@@ -213,12 +215,13 @@ orange: EB5A28
 
 .live-show {
   margin:auto;
-  width: 70%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.25em 1em 0.25em 1em;
   text-transform: uppercase;
+  background-color: white;
 }
 
 .live-show:hover {
@@ -262,6 +265,11 @@ orange: EB5A28
   background-color: #8a43fc;
   cursor: pointer;
   transition: 0.25s;
+}
+
+.ticket-link {
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .pastshow-ticket-button {
@@ -580,6 +588,20 @@ orange: EB5A28
   }
 }
 
+@media screen and (max-width: 700px) {
+  .live-date {
+    font-size: 1.2em;
+  }
+
+  .live-venue {
+    font-size: 1.2em;
+  }
+
+  .ticket-button {
+    font-size: smaller;
+  }
+}
+
 @media screen and (max-width: 650px) {
   .true-lyrics-img {
     font-size: smaller;
@@ -596,6 +618,17 @@ orange: EB5A28
 
   .song-img {
     height: 40%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .live-show {
+    width: 20em;
+    padding: 1em;
+  }
+
+  .live-header {
+    display: none;
   }
 }
 

@@ -122,7 +122,14 @@ function Blog() {
                     </p>
                     </div>
                     <div className="true-lyrics-img">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>This song started off as a piano part. It was originally created in a late night session in front of the house piano and came to fruition rather quickly. 
+                    <p>
+                    The vocal melody and lyrics came out in one fluent expression and went well with the beautiful piano part. That’s when we knew we had something special. 
+                    </p>The lyrics are simple but can be interpreted in a variety of ways which we thought was appropriate considering how the song doesn’t really have a set structure which makes it more of an interpretive listening experience. 
+                    <p>
+                    To us, the song means more than you would realize. It’s based on the idea of making music for other people for the sake of it rather than just writing because you love to do it. Don’t let other people influence your life decisions and stay true to yourself in other words.
+                    </p>
+                    </p>
                     </div>
                 </div>   
             </div>
