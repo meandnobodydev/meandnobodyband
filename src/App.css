@@ -408,6 +408,7 @@ orange: EB5A28
   width: 60%;
   padding: 1em;
   background-color: white;
+  overflow: scroll;
 }
 
 .meaning-section {
@@ -604,7 +605,7 @@ orange: EB5A28
 
 @media screen and (max-width: 650px) {
   .true-lyrics-img {
-    font-size: smaller;
+    font-size: 0.75em;
     overflow: scroll;
   }
 
