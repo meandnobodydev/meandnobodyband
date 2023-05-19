@@ -1,5 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
 
+@import url('https://fonts.googleapis.com/css2?family=Foldit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
 html, body {overflow-x: hidden !important;width: 100vw !important;}
 
 body {
@@ -7,12 +9,14 @@ body {
   /* RECORD STYLING
   background-color: #FFF9ED;
   color: white; */
-  background-color: black;
-  /* display: flex;
+  background-color: white;
+  height: 100vh;
+  display: flex;
   align-items: center;
-  justify-content: center; */
-  /* width: 100%;
-  overflow-x: hidden; */
+  justify-content: center;
+  width: 100%;
+  overflow-y: hidden;
+  /* height: 100%; */
 }
 
 /* MAIN COLORS 
@@ -32,13 +36,6 @@ yellow: FBC78A
 orange: EB5A28
 
 /* #ffcb69; */
-
-
-
-
-
-
-
 
 
 
@@ -93,17 +90,113 @@ orange: EB5A28
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: black;
+  margin-top: 0.25em;
+  padding: 0;
+  /* background-color: black; */
+}
+
+#TV-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  max-height: 35em;
+  z-index: -10;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+@keyframes changeBlogLettersColor {
+  0% {
+    color: #9600CC;
+  }
+  25% {
+    color: #FF35FE;
+  }
+  50% {
+    color: #479AFF;
+  }
+  75% {
+    color: #F7F7FF;
+  }
+  100% {
+    color: #735fda;
+  }
+}
+
+.TVlinks {
+  animation-name: changeBlogLettersColor;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transition-duration: 2s;
+  color: #6436ae;
+  font-family: 'Bruno Ace', cursive;
+  position: absolute;
+  text-shadow: 2px 2px 4px #735fda;
+  text-decoration: none;
+}
+
+#TV-link1 {
+  margin-right: 19em;
+  margin-bottom: 15em;
+}
+
+#TV-link2 {
+  margin-left: 7em;
+  margin-bottom: 23em;
+}
+
+#social-links-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.social-icons {
+  font-size: 1.5em;
+  margin: 0.25em;
+  z-index: 10;
+  color:rgb(0, 0, 0);
+}
+
+.social-icons:hover {
+
+  /* RECORD STYLING
+  color: #dd1c1a; */
+
+  transform: translateY(-5px);
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 #header-vid {
-  height: 25em;
+  z-index: -10;
+  height: 50em;
 }
 
-/* #vintage-logo {
-  width: 30vw;
-  height: 30vh;
-} */
+#logo {
+  /* width: 30vw;
+  height: 30vh; */
+  width: 7.75em;
+  z-index: 10;
+}
+
+#logo:hover {
+  cursor: pointer;
+}
 
 #nav-logo {
   font-size: 15em;
@@ -130,26 +223,6 @@ orange: EB5A28
 #social-links {
   margin-top: 1em;
   padding-bottom: 1em;
-}
-
-.social-icons {
-  font-size: 1.75em;
-  margin: 0.5em;
-
-  /* RECORD STYLING
-  color: #FBC78A; */
-
-  color:white;
-}
-
-.social-icons:hover {
-
-  /* RECORD STYLING
-  color: #dd1c1a; */
-
-  color: #8a43fc;
-  cursor: pointer;
-  transition: 0.25s;
 }
 
 #vid-section {
@@ -359,24 +432,6 @@ orange: EB5A28
   font-weight: 900;
 }
 
-@keyframes changeBlogLettersColor {
-  0% {
-    color: #9600CC;
-  }
-  25% {
-    color: #FF35FE;
-  }
-  50% {
-    color: #479AFF;
-  }
-  75% {
-    color: #F7F7FF;
-  }
-  100% {
-    color: #735fda;
-  }
-}
-
 .song-blog {
   border: 2px solid white;
   color: white;
@@ -528,10 +583,51 @@ orange: EB5A28
   transition: 0.25s;
 }
 
+/* /////// MEDIA QUERIES ////////// */
+
+@media screen and (max-width: 570px) {
+  #header-vid {
+    height: 40em;
+  }
+
+  #logo {
+    width: 6em;
+  }
+
+  #TV-link1 {
+    margin-right: 15.25em;
+    margin-bottom: 12em;
+  }
+  
+  #TV-link2 {
+    margin-left: 5.75em;
+    margin-bottom: 18.25em;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  #header-vid {
+    height: 33em;
+  }
+
+  #TV-div {
+    height: 30em;
+  }
+
+  #logo {
+    width: 5.5em;
+  }
+
+  .social-icons {
+    width: 0.75em;
+  }
+
+}
+
 
 /* ////////// MEDIA QUERIES ///////////////////////////// */
 
-@media screen and (max-width: 1110px){
+/* @media screen and (max-width: 1110px){
   #right-blog {
     display: none;
   }
@@ -581,15 +677,14 @@ orange: EB5A28
   #inner-left {
     border-bottom: 2px solid #b58afb;
     border-right: none;
-    /* padding-bottom: 1.5em; */
   }
 
   #contact-section-right {
     padding: 0;
   }
-}
+} */
 
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
   .live-date {
     font-size: 1.2em;
   }
@@ -601,9 +696,9 @@ orange: EB5A28
   .ticket-button {
     font-size: smaller;
   }
-}
+} */
 
-@media screen and (max-width: 650px) {
+/* @media screen and (max-width: 650px) {
   .true-lyrics-img {
     font-size: 0.75em;
     overflow: scroll;
@@ -620,9 +715,9 @@ orange: EB5A28
   .song-img {
     height: 40%;
   }
-}
+} */
 
-@media screen and (max-width: 570px) {
+/* @media screen and (max-width: 570px) {
   .live-show {
     width: 20em;
     padding: 1em;
@@ -631,15 +726,15 @@ orange: EB5A28
   .live-header {
     display: none;
   }
-}
+} */
 
-@media screen and (max-width: 460px) {
+/* @media screen and (max-width: 460px) {
   .song-img {
     width: 100%;
   }
 
 
-}
+} */
 
 /* @media screen and (max-width: 710px) {
   html {

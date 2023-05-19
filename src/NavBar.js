@@ -2,7 +2,7 @@ import React from "react";
 import { BsInstagram, BsFacebook, BsYoutube, BsTwitter } from "react-icons/bs";
 import { FaTiktok } from "react-icons/fa";
 import { Link } from "react-scroll";
-import { SiLinktree } from "react-icons/si"
+import { SiLinktree } from "react-icons/si";
 
 function NavBar() {
     return (
