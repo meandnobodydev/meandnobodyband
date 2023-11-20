@@ -31,7 +31,6 @@ function Contact() {
         <div id="contact-section">
             <div id="contact-section-left">
                 <div id="inner-left">
-                <h1 id="contact-logo">ME + NOBODY</h1>
                 <h2 className="contact-content">ALL INQUIRIES</h2>
                 <h3 id="contact-email">EMAIL:<br></br> MEANDNOBODYBAND@GMAIL.COM</h3>
                 </div>
@@ -51,7 +50,7 @@ function Contact() {
                     :
                     null
                     }
-                    <button className="btn">SUBMIT</button>
+                    <button className="contact-btn">SUBMIT</button>
                 </form>
             </div>
         </div>
