@@ -4,6 +4,8 @@ import video from "./SITETVS.mp4";
 import logo from "./logo_transblack.png"
 import { BsInstagram, BsFacebook, BsYoutube, BsTwitter, BsSpotify } from "react-icons/bs";
 import { FaTiktok } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { SiLinktree } from "react-icons/si";
 import Reviews from './Reviews';
 import Live from "./Live.js";
 import Contact from './Contact';
@@ -52,7 +54,8 @@ function App() {
       <a href="https://www.tiktok.com/@meandnobodyband" className="social-icons" target="_blank"><FaTiktok /></a>
       <a href="https://www.facebook.com/people/Me-Nobody/100086959931142/" className="social-icons" target="_blank"><BsFacebook /></a>
       <a href="https://www.youtube.com/channel/UCyRf47aAJI8wIy1AA6-kViQ" className="social-icons" target="_blank"><BsYoutube /></a>
-      <a href="https://twitter.com/MeAndNobodyBand" className="social-icons" target="_blank"><BsTwitter /></a>
+      <a href="https://twitter.com/MeAndNobodyBand" className="social-icons" target="_blank">< FaXTwitter/></a>
+      <a href="https://linktr.ee/meandnobody" className="social-icons" target="_blank">< SiLinktree/></a>
     </div>
     </>
   );
