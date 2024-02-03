@@ -4,6 +4,16 @@ function ReviewCards() {
   return (
     <div>
     <Carousel id="card-shifter" variant="dark" interval={null}>
+    <Carousel.Item>
+        <div className="review-card-section"> 
+        <div className="review-card">
+                <h1>HIGHER</h1>
+                <div className="ratio ratio-16x9">
+                <iframe src={"https://www.youtube.com/embed/P2SM9TdxA58?si=OpWqsdAapQqrb5nQ"} title="higher"></iframe>
+                </div>
+            </div>
+        </div>
+      </Carousel.Item>
       <Carousel.Item>
         <div className="review-card-section"> 
         <div className="review-card">
