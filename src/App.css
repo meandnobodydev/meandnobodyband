@@ -474,6 +474,20 @@ orange: EB5A28
   transition: 0.25s;
 }
 
+.tix-link {
+  color: black;
+  background-color: white;
+  padding: 0.25em;
+  border: solid 1px black;
+  font-size: smaller;
+}
+
+.tix-link:hover {
+  color: white;
+  background-color: black;
+  transition: 0.5s;
+}
+
 .past-live-show {
   margin:auto;
   width: 70%;
